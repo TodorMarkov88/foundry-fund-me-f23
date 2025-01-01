@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.19;
 
-import {Script,console} from "forge-std/Script.sol";
+import {Script} from "forge-std/Script.sol";
 import {FundMe} from "../src/FundMe.sol";
 import {HelperConfig} from "./HelperConfig.s.sol";
 
@@ -9,8 +9,6 @@ contract DeployFundMe is Script {
     function run() external returns (FundMe) {
         HelperConfig helperConfig = new HelperConfig();
         address ethUsdPriceFeed = helperConfig.activeNetworkConfig();
-
-     console.log("Price feed address:", ethUsdPriceFeed);
         vm.startBroadcast();
         // Mock
         FundMe fundMe = new FundMe(ethUsdPriceFeed);
