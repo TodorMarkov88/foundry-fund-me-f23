@@ -2,7 +2,7 @@
 src = "src"
 out = "out"
 libs = ["lib"]
-test = "test/unit" 
+# test = "test/unit" 
 remappings = [
     '@chainlink/contracts/=lib/chainlink-brownie-contracts/contracts/',
 ]
