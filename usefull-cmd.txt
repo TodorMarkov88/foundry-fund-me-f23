@@ -1,6 +1,0 @@
-forge snapshot --mt testName (snapshot gas)
-gasleft() (buildin function in Solidity)
-tx.gasprice (buildin function in Solidity) 
-forge inspect fundMe storageLayout (info)
-cast storage (info)
-$ forge install Cyfrin/foundry-devops
